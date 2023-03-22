@@ -64,21 +64,44 @@
 
 
 // compito - fare la scacchiera con il doppio ciclo 
-
-// for (let x = 1; x < 11; x++){
-//     for (let y=1; y < 11; y++){
-//         console.log("x: ",x, "y: ", y);
+// let stringa ="";
+// for (let x = 0; x < 10; x++) {
+//   if( x % 2 === 0){
+//     for (let y= 0; y < 10; y++) {
+//         // console.log('x: ', x, 'y: ', y);
+//         if( y % 2 === 0){
+//           stringa += " ";
+//         }else{
+//           stringa += "#";
+//         }
+//       }
+// } else {
+//   stringa += " ";
+// }
+//  if(x => 8){
+//   stringa += "\n";
+//  }
+// }
+// console.log(stringa);
+// let stringa = "";
+// let size = 8;
+// for (let x = 0; x < 8; x++) {
+//   if(x > size){
+//     stringa += "\n";
+//   }else{
+//     if(x % 2 !== 0){
+//       stringa += " ";
+//     }else{
+//       stringa += "#";
 //     }
-
-
-// } 
-
-
-for(let riga = 0, riga < 8; riga++){
-    if(riga % 2 !== 0) {
-        console.log("" + "#").repeat(4);
-    }else if (riga % 2 === 0){
-        console.log("#" + "").repeat(4);
-    }
-
-}
+//   }
+//   for (let y= 0; y < 8; y++) {
+//       // console.log('x: ', x, 'y: ', y);
+//     if(y % 2 !== 0){
+//       stringa += " ";
+//     }else{
+//       stringa += "#";
+//     }
+//     console.log(stringa)
+//   }
+// }
