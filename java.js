@@ -143,29 +143,29 @@
 // 2° soluzione (con doppio ciclo)
 
 
-let scacchiera = "";
+// let scacchiera = "";
 
-for(let y = 0; y < 8; y++){
-    for(let x = 0; x < 8 ; x++){
-        if(y % 2 === 0){
-            if(x % 2 === 0){
-                scacchiera += "#";
-            }else{
-                scacchiera += " ";
-            }
+// for(let y = 0; y < 8; y++){
+//     for(let x = 0; x < 8 ; x++){
+//         if(y % 2 === 0){
+//             if(x % 2 === 0){
+//                 scacchiera += "#";
+//             }else{
+//                 scacchiera += " ";
+//             }
             
-        }else{
-            if( x % 2 === 0){
-                scacchiera += " ";
-            }else{
-                scacchiera += "#";
-            }
-        }
+//         }else{
+//             if( x % 2 === 0){
+//                 scacchiera += " ";
+//             }else{
+//                 scacchiera += "#";
+//             }
+//         }
 
-    }
-    scacchiera += "\n"
-}
-console.log(scacchiera)
+//     }
+//     scacchiera += "\n"
+// }
+// console.log(scacchiera)
 
         
 //-------------------------------------------------------------------------
@@ -210,3 +210,58 @@ console.log(scacchiera)
 //---------------------------------------------------------
 
 
+
+
+// 22/03/2023
+//  ESERCIZI
+
+// MINIMUM CAPITOLO 3 DI ELOQUENTJAVASCRIPT
+
+
+
+// (1) Scrivere una funzione che dato un numero se è positivo lo moltiplichi per due, se negativo no.
+
+function numeropositivo(numero){
+    if(numero > -1){
+        numero *= 2;
+        return numero
+    }
+}
+console.log(numeropositivo(4))
+
+
+// (2) Scrivere una funzione che data una stringa restituisca la sua versione maiuscola.
+
+// (3) Scrivere una funzione che data una stringa mi restituisca vero se è più lunga di 10 caratteri altrimenti restituisca falso
+
+// (4) Scrivere una funzione pura che restituisca la scacchiera
+
+function skacchiera(i){
+    let scacchiera = "";
+
+for(let y = 0; y < 8; y++){
+    for(let x = 0; x < 8 ; x++){
+        if(y % 2 === 0){
+            if(x % 2 === 0){
+                scacchiera += "#";
+            }else{
+                scacchiera += " ";
+            }
+            
+        }else{
+            if( x % 2 === 0){
+                scacchiera += " ";
+            }else{
+                scacchiera += "#";
+            }
+        }
+
+    }
+    scacchiera += "\n"
+}
+return scacchiera;
+}
+
+// (5) Scrivere una funzione che dato un numero, restituisca una stringa con la logica di FizzBuzz
+
+// (6) Scrivere una funzione che data una stringa restituisca una stringa composta solo dai caratteri dispari dell'originale
