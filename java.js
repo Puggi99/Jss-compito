@@ -217,51 +217,115 @@
 
 // MINIMUM CAPITOLO 3 DI ELOQUENTJAVASCRIPT
 
+// function minimo(num1,num2){
+//     let risultato = Math.min(num1,num2);
+//     return risultato;
+// }
+// console.log(minimo(1,2))
+
+// function minimo1(num1,num2){
+//     if(num1>num2){
+//         return num2;
+//     }else{
+//         return num1;
+//     }
+// }console.log(minimo1(1,2))
 
 
 // (1) Scrivere una funzione che dato un numero se è positivo lo moltiplichi per due, se negativo no.
 
-function numeropositivo(numero){
-    if(numero > -1){
-        numero *= 2;
-        return numero
-    }
-}
-console.log(numeropositivo(4))
+// function numeropositivo(numero){
+//     if(numero > -1){
+//         numero *= 2;
+//         return numero
+//     }
+// }
+// console.log(numeropositivo(4))
 
 
 // (2) Scrivere una funzione che data una stringa restituisca la sua versione maiuscola.
 
+// function maiuscola (m){
+//     m = m.toUpperCase();
+//     return m
+// }
+// console.log(maiuscola('ciao'));
+
 // (3) Scrivere una funzione che data una stringa mi restituisca vero se è più lunga di 10 caratteri altrimenti restituisca falso
+
+// function chartrue (i){
+//     let cavolo = "";
+//     if (i.length > 10){
+//         cavolo += "vero";
+    
+//     } else{
+//         cavolo += "falso";
+    
+//     }
+//     return cavolo
+// }
+// console.log(chartrue('ciaociaociao'));
 
 // (4) Scrivere una funzione pura che restituisca la scacchiera
 
-function skacchiera(i){
-    let scacchiera = "";
+// function skacchiera(i){
+//     let scacchiera = "";
 
-for(let y = 0; y < 8; y++){
-    for(let x = 0; x < 8 ; x++){
-        if(y % 2 === 0){
-            if(x % 2 === 0){
-                scacchiera += "#";
-            }else{
-                scacchiera += " ";
-            }
+// for(let y = 0; y < 8; y++){
+//     for(let x = 0; x < 8 ; x++){
+//         if(y % 2 === 0){
+//             if(x % 2 === 0){
+//                 scacchiera += "#";
+//             }else{
+//                 scacchiera += " ";
+//             }
             
-        }else{
-            if( x % 2 === 0){
-                scacchiera += " ";
-            }else{
-                scacchiera += "#";
-            }
-        }
+//         }else{
+//             if( x % 2 === 0){
+//                 scacchiera += " ";
+//             }else{
+//                 scacchiera += "#";
+//             }
+//         }
 
-    }
-    scacchiera += "\n"
-}
-return scacchiera;
-}
+//     }
+//     scacchiera += "\n"
+// }
+// return scacchiera;
+// }
 
 // (5) Scrivere una funzione che dato un numero, restituisca una stringa con la logica di FizzBuzz
 
+
+// function strFizzBuzz(number){
+// for (let number = 1; number <= 100;) {
+
+//     if (number % 3 == 0, number % 5 == 0) {
+//         return "FizzBuzz";
+//     } else if (number % 3 == 0) {
+//         return "Fizz";
+//     } else if (number % 5 == 0) {
+//         return "Buzz";
+//     } else{
+//         return number;
+//     }
+// }
+// }
+
+// console.log(strFizzBuzz());
+
+// function strFizzBuzz(number){
+//     if (number % 3 === 0 && number % 5 === 0) {
+//         return "FizzBuzz";
+//     } else if (number % 3 == 0) {
+//         return "Fizz";
+//     } else if (number % 5 == 0) {
+//         return "Buzz";
+//     } else{
+//         return number;
+//     }
+// }
+// console.log(strFizzBuzz(8))
+
 // (6) Scrivere una funzione che data una stringa restituisca una stringa composta solo dai caratteri dispari dell'originale
+
