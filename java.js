@@ -153,7 +153,7 @@
 //             }else{
 //                 scacchiera += " ";
 //             }
-            
+
 //         }else{
 //             if( x % 2 === 0){
 //                 scacchiera += " ";
@@ -167,7 +167,7 @@
 // }
 // console.log(scacchiera)
 
-        
+
 //-------------------------------------------------------------------------
 
 
@@ -188,7 +188,7 @@
 //    }else {
 //     console.log(i);
 //    }
-    
+
 // }
 
 //---------------------------------------------------------
@@ -231,16 +231,19 @@
 //     }
 // }console.log(minimo1(1,2))
 
+// const minimoLambda = (num1,num2) => num1 > num2 ? num2 : num1;
 
 // (1) Scrivere una funzione che dato un numero se è positivo lo moltiplichi per due, se negativo no.
 
 // function numeropositivo(numero){
-//     if(numero > -1){
+//     if(numero >= 0){
 //         numero *= 2;
 //         return numero
 //     }
 // }
 // console.log(numeropositivo(4))
+
+// const doubleNumberIfPositiveLambda = (n) => n >= 0 ? n*2 : n;    operatore ternario: fa lo stesso lavoro della funzione chartrue. Si usa solo se la funziona è molto semplice, proprio perchè l'operatore ternario è molto difficile da interpretare
 
 
 // (2) Scrivere una funzione che data una stringa restituisca la sua versione maiuscola.
@@ -251,20 +254,40 @@
 // }
 // console.log(maiuscola('ciao'));
 
+
+
 // (3) Scrivere una funzione che data una stringa mi restituisca vero se è più lunga di 10 caratteri altrimenti restituisca falso
 
 // function chartrue (i){
 //     let cavolo = "";
 //     if (i.length > 10){
 //         cavolo += "vero";
-    
+
 //     } else{
 //         cavolo += "falso";
-    
+
 //     }
 //     return cavolo
 // }
 // console.log(chartrue('ciaociaociao'));
+ 
+
+
+// 2° soluzione
+// function chartrue (i){
+    
+//     if (i.length > 10){
+//         return True;
+
+//     } else{
+//         return False;
+
+//     }
+  
+// }
+// console.log(chartrue('ciao'));
+
+
 
 // (4) Scrivere una funzione pura che restituisca la scacchiera
 
@@ -279,7 +302,7 @@
 //             }else{
 //                 scacchiera += " ";
 //             }
-            
+
 //         }else{
 //             if( x % 2 === 0){
 //                 scacchiera += " ";
@@ -293,6 +316,8 @@
 // }
 // return scacchiera;
 // }
+
+
 
 // (5) Scrivere una funzione che dato un numero, restituisca una stringa con la logica di FizzBuzz
 
@@ -327,5 +352,48 @@
 // }
 // console.log(strFizzBuzz(8))
 
+
+
 // (6) Scrivere una funzione che data una stringa restituisca una stringa composta solo dai caratteri dispari dell'originale
+
+// let parolaDispari="";
+// function dispari(numero) {
+//     for (let i = 1; i < numero.length; i+=2) {
+//       parolaDispari += numero[i];
+//   }
+//   return parolaDispari;
+// }console.log(dispari("Babbo"))
+
+
+// 2° soluzione
+
+// function selectOddCharsFromText(text) {
+
+// }
+
+
+// console.log(selectOddCharsFromText("ciao"));
+// console.log(selectOddCharsFromText("pincopallino"));
+// console.log(selectOddCharsFromText("dajeroma"));        
+
+
+// console.log(dispari("ciao"));
+// console.log(dispari("pincopallino"));
+// console.log(dispari("dajeroma"));      
+
+
+
+// (7) Scrivere una funzione che sommi tutti i numeri in un range prestabilito
+
+// function sumRange(startNumber, endNumber){
+//     let sum = 0;
+//     for(let i = startNumber; i <= endNumber; i++){
+//         sum = sum + i;
+//     }return sum;
+// }
+
+// console.log(sumRange(0,3)); // 6
+// console.log(sumRange(1,3)); // 6
+// console.log(sumRange(1,5)); // 15
+// console.log(sumRange(2,6)); // 20
 
